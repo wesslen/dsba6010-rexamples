@@ -5,3 +5,6 @@ install.packages('devtools')
 install.packages('remotes')
 install.packages('rmarkdown')
 install.packages('tidyverse')
+#
+Sys.setenv(DOWNLOAD_STATIC_LIBV8 = 1)
+install.packages("rstan")
