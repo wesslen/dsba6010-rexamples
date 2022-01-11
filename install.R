@@ -6,5 +6,10 @@ install.packages('remotes')
 install.packages('rmarkdown')
 install.packages('tidyverse')
 #
-Sys.setenv(DOWNLOAD_STATIC_LIBV8 = 1)
-install.packages("rstan")
+#Sys.setenv(DOWNLOAD_STATIC_LIBV8 = 1)
+#install.packages("rstan")
+install.packages('osfr', repos = 'http://cran.us.r-project.org')
+install.packages('cmdstanr', repos = c('https://mc-stan.org/r-packages/', getOption('repos')))
+
+devtools::install_github('rmcelreath/rethinking')
+cmdstanr::install_cmdstan()
