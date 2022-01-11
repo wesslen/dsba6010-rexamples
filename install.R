@@ -1,2 +1,7 @@
 install.packages('renv')
 renv::restore('renv.lock')
+#options(renv.config.auto.snapshot = TRUE)
+install.packages('devtools')
+install.packages('remotes')
+install.packages('rmarkdown')
+install.packages('tidyverse')
