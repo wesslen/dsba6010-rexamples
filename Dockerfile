@@ -1,3 +1,5 @@
+FROM rocker/binder:latest
+
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
@@ -14,3 +16,6 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+
+# Copy your repository contents to the image
+COPY --chown=rstudio:rstudio . ${HOME}
