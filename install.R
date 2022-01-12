@@ -12,4 +12,4 @@ install.packages('osfr', repos = 'http://cran.us.r-project.org')
 #install.packages('cmdstanr', repos = c('https://mc-stan.org/r-packages/', getOption('repos')))
 
 #devtools::install_github('rmcelreath/rethinking')
-cmdstanr::install_cmdstan()
+#cmdstanr::install_cmdstan()
